@@ -1,5 +1,4 @@
-(function() {
-    
+define(function() {
     Date.shortMonths = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
     Date.longMonths = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
     Date.shortDays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
@@ -71,5 +70,4 @@
             return (esc === '' && replaceChars[chr]) ? replaceChars[chr].call(date) : chr;
         });
     };
-
-}).call(this);
+});
